@@ -12,4 +12,5 @@ class UrlBuilder {
   String buildChangePasswordUrl() => '$_baseUrl/change-password';
   String buildDeleteAccountUrl() => '$_baseUrl/delete-account';
   String buildBootcampListUrl() => '$_baseUrl/api/v1/bootcamps';
+  String buildBootcampUrl(String id) => '$_baseUrl/api/v1/bootcamps/$id';
 }

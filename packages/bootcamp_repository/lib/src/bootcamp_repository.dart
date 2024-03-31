@@ -12,4 +12,9 @@ class BootCampRepository {
     final bootCamps = await _api.getBootcamps();
     return bootCamps.bootcamps.toDomain();
   }
+
+  Future<Bootcamp> getBootCamp(String id) async {
+    final bootCamp = await _api.getBootcamp(id);
+    return bootCamp.toDomain();
+  }
 }

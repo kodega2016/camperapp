@@ -22,5 +22,5 @@ BootcampRM _$BootcampRMFromJson(Map<String, dynamic> json) => BootcampRM(
       acceptGi: json['acceptGi'] as bool,
       careers:
           (json['careers'] as List<dynamic>).map((e) => e as String).toList(),
-      location: json['location'] as Map<String, dynamic>,
+      location: LocationRM.fromJson(json['location'] as Map<String, dynamic>),
     );

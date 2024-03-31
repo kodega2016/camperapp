@@ -17,7 +17,6 @@ class BootcampListBloc extends Bloc<BootcampListEvent, BootcampListState> {
         final bootcamps = await bootCampRepository.getBootCamps();
         emit(BootcampListLoaded(bootcamps));
       } catch (e) {
-        print("Error loading bootcamps: $e");
         emit(BootcampListError('Error loading bootcamps'));
       }
     });

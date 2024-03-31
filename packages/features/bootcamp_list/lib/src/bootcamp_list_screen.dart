@@ -172,13 +172,13 @@ class BootcampListView extends StatelessWidget {
                               overflow: TextOverflow.ellipsis,
                             ),
                             isThreeLine: true,
-                            leading: const Image(
+                            leading: Image(
                               image: NetworkImage(
-                                'https://th.bing.com/th/id/OIP.0QoxrfLIdnqvhAA9dtARTgHaEH?rs=1&pid=ImgDetMain',
+                                'http://192.168.105.1:5000/uploads/${bootcamp.photo}',
                               ),
                               height: 100,
                               width: 100,
-                              fit: BoxFit.cover,
+                              fit: BoxFit.contain,
                             ),
                           );
                         },

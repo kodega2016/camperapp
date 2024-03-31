@@ -1,3 +1,4 @@
+import 'package:camper_api/src/models/response/location_rm.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'bootcamp_rm.g.dart';
@@ -19,7 +20,7 @@ class BootcampRM {
   final bool acceptGi;
   final List<String> careers;
   // final List<String> courses;
-  final Map<String, dynamic> location;
+  final LocationRM location;
 
   BootcampRM({
     required this.id,

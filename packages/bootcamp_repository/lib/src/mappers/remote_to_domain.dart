@@ -13,6 +13,31 @@ extension RemoteBootcampToDomain on BootcampRM {
       id: id,
       name: name,
       description: description,
+      website: website,
+      phone: phone,
+      email: email,
+      createdAt: createdAt,
+      slug: slug,
+      photo: photo,
+      housing: housing,
+      jobAssistance: jobAssistance,
+      jobGuarantee: jobGuarantee,
+      acceptGi: acceptGi,
+      careers: careers,
+      location: location.toDomain(),
+    );
+  }
+}
+
+extension RemoteLocationToDomain on LocationRM {
+  Location toDomain() {
+    return Location(
+      city: city,
+      country: country,
+      coordinates: coordinates,
+      formattedAddress: formattedAddress,
+      street: street,
+      zipcode: zipcode,
     );
   }
 }

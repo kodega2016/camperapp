@@ -48,6 +48,7 @@ GoRouter goRouter({
             name: AppRoute.bootcamp.name,
             builder: (context, state) => BootcampDetailsScreen(
               bootcampId: state.pathParameters['id'] ?? "",
+              bootCampRepository: sl<BootCampRepository>(),
             ),
           ),
         ],
@@ -93,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       BootcampListScreen(
         bootCampRepository: sl<BootCampRepository>(),
-        onBootcampSelected: (Bootcamp) {},
+        onBootcampSelected: (bootcamp) {},
       ),
       ProfileMenuScreen(
         onSignOut: () {

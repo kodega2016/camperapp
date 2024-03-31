@@ -67,6 +67,16 @@ class CamperApi {
       throw Exception('Failed to get bootcamps');
     }
   }
+
+  Future<BootcampRM> getBootcamp(String id) async {
+    final url = _urlBuilder.buildBootcampUrl(id);
+    final response = await _dio.get(url);
+    if (response.statusCode == 200) {
+      return BootcampRM.fromJson(response.data?['data']);
+    } else {
+      throw Exception('Failed to get bootcamp');
+    }
+  }
 }
 
 extension on Dio {
