@@ -1,0 +1,42 @@
+name: camper_app
+description: a mobile application using feature based approach.
+publish_to: "none"
+version: 1.0.0+1
+environment:
+  sdk: ">=3.3.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  domain_models:
+    path: packages/domain_models
+  component_library:
+    path: packages/component_library
+  camper_api:
+    path: packages/camper_api
+  user_repository:
+    path: packages/user_repository
+  bootcamp_repository:
+    path: packages/bootcamp_repository
+  flutter_secure_storage: ^4.2.1
+  go_router: ^13.2.2
+  get_it: ^7.6.7
+  sign_in:
+    path: packages/features/sign_in
+  sign_up:
+    path: packages/features/sign_up
+  home:
+    path: packages/features/home
+  bootcamp_list:
+    path: packages/features/bootcamp_list
+  bootcamp_detail:
+    path: packages/features/bootcamp_details
+  profile_menu:
+    path: packages/features/profile_menu
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+flutter:
+  uses-material-design: true

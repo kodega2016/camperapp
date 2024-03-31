@@ -1,0 +1,17 @@
+name: user_repository
+description: a package that contains the user repository for the app
+version: 1.0.0
+publish_to: none 
+environment:
+  sdk: ^3.3.3
+
+dependencies:
+  domain_models:
+    path: ../domain_models
+  camper_api:
+    path: ../camper_api
+  flutter_secure_storage: ^4.2.1
+  rxdart: ^0.27.7
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
