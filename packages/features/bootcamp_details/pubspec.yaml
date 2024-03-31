@@ -9,8 +9,16 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.5
+  domain_models:
+    path: ../../domain_models
+  component_library:
+    path: ../../component_library
+  bootcamp_repository:
+    path: ../../bootcamp_repository
 
 dev_dependencies:
   flutter_test:
